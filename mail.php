@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
       if ($name != '' && $email != '' && $contact != '') {
             if ($human == '16') {
                   if (mail($to, $subject, $body, $from)) {
-                        echo header('location: https://www.mrjacobs.co.za/thankyou.html');
+                        echo header('location: https://github.com/JohanJ76/portfolio/blob/main/thankyou.html');
                   } else {
                         echo '<p>Something went wrong, go back and try again!</p>';
                   }
