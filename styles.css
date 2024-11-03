@@ -377,93 +377,6 @@ footer p {
       padding: 50px 0 20px 0;
 }
 
-form {
-      width: 90%;
-      margin: 0 auto;
-      text-align: left;
-}
-
-input,
-textarea,
-label {
-      display: block;
-      width: 100%;
-      margin: 0 auto;
-      color: var(--dark-blue);
-      padding: 10px 0;
-      font-size: clamp(1rem, 0.963rem + 0.1852vw, 1.125rem);
-}
-
-input,
-textarea {
-      background-color: var(--white);
-      border: 0;
-      color: var(--dark-blue);
-      padding-left: 6px;
-      margin-bottom: 8px;
-      outline: 1px dotted var(--dark-blue);
-}
-
-input[type=submit] {
-      font-size: clamp(1rem, 0.963rem + 0.1852vw, 1.125rem);
-      letter-spacing: 0.2rem;
-      color: var(--white);
-      text-transform: uppercase;
-      background-color: var(--dark-blue);
-      width: 120px;
-      border-radius: 0;
-      margin-top: 30px;
-      outline: none;
-      border-radius: 30px;
-}
-
-input[type=submit]:hover {
-      background-color: var(--red);
-      color: var(--white);
-      cursor: pointer;
-      transition: all 0.2s ease;
-}
-
-input:focus,
-textarea:focus {
-      outline: 1px dotted var(--dark-blue);
-}
-
-
-/* THANK YOU MESAGE */
-.thanks {
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      margin-top: -120px;
-}
-
-.thanks .you {
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-}
-
-.you article {
-      margin: 40px 0;
-}
-
-.you h1 {
-      font-size: 4rem;
-      line-height: 4rem;
-}
-
-.thanks .you img {
-      width: 12rem;
-      height: auto;
-}
-
-.subline {
-      width: 60%;
-      margin: 0 auto;
-      padding: 2rem 0;
-}
-
 
 button {
       width: 120px;
@@ -481,6 +394,31 @@ button {
 }
 
 button:hover {
+      background-color: var(--red);
+      color: var(--white);
+      cursor: pointer;
+}
+
+.mail {
+      width: 100%;
+      height: auto;
+      text-align: left;
+      margin-top: 1.5rem;
+}
+.button1 {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+      padding: 8px 12px;
+      color: var(--white);
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      background-color: var(--dark-blue);
+      transition: all 0.2s ease;
+      border-radius: 30px;
+}
+
+.button1:hover {
       background-color: var(--red);
       color: var(--white);
       cursor: pointer;
