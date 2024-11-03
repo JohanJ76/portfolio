@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="theme-color" content="#ee2d26">
+
+      <meta name="description" content="Johan Jacobs, Award Winning Graphic Designer designing from Bloemfontein, South Africa.
+      ">
+
+      <meta name="keywords"
+            content="graphic designer, designer, freelance, graphic, freelance graphic designer, Bloemfontein, grafies, grafiese ontwerper, design, agency, studio, logo design, graphic designer Bloemfontein, freelance designer Bloemfontein, grafies, grafiese ontwerper Bloemfontein, bloemfontein, South Africa, Suid Afrika">
+
+      <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+      <link rel="manifest" href="./img/site.webmanifest">
+
+      <link rel="stylesheet" href="styles.css">
+
+
+      <title>Contact | Johan Jacobs</title>
+
+</head>
+
+<body>
+
+      <!-- LOADER SCREEN -->
+      <div class="splash">
+            <img src="./img/logo-icon-C.png" alt="" class="fadeIn">
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+      <!-- HEADER & NAVBAR -->
+      <header class="header">
+
+            <nav>
+                  <ul class="sidebar">
+                        <li onclick="hideSidebar()"><a href="#"><svg xmlns=" http://www.w3.org/2000/svg" height="26"
+                                          viewBox="0 -960 960 960" width="26" fill="#f3f3f3">
+                                          <path
+                                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                    </svg>
+                              </a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html" class="active">Contact</a></li>
+                  </ul>
+
+                  <ul>
+                        <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+                        <li class="hideOnMobile"><a href="./portfolio.html">Portfolio</a></li>
+                        <li class="hideOnMobile"><a href="./about.html">About</a></li>
+                        <li class="hideOnMobile"><a href="./contact.html" class="active">Contact</a></li>
+                        <li onclick="showSidebar()" class="hide"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                          height="26" viewBox="0 -960 960 960" width="26" fill="#f3f3f3">
+                                          <path
+                                                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                    </svg></a></li>
+                  </ul>
+            </nav>
+
+            <a href="https://www.mrjacobs.co.za" class="logo"><img src="./img/logo-icon-A.png"
+                        alt="Johan Jacobs - Graphic Designer"></a>
+
+      </header>
+
+
+      <!-- Body Wrapper -->
+      <div class="body-wrapper" oncontextmenu="return false">
+
+            <div class="about-subheader">
+
+                  <div class="about-contact">
+                        <p>I am based in Bloemfontein, South Africa, and work remotely far and wide. If you'd like to
+                              discuss a project or freelance requirements I'd love to hear from you.
+                              <br><br>
+                              To find out how I can help elevate your brand, please
+                              get in touch with me by filling out this form below and I'll get back to you!
+                        </p>
+                  </div>
+                  <!-- Form -->
+                  <div class="about-contact">
+                        <h2>Let's work together</h2>
+                  </div>
+
+
+                  <form method="post" action="./mail.php">
+                        <label>Name &amp; Surname:</label>
+                        <input name="name" placeholder="Your Name..." required>
+
+                        <label>Email Address:</label>
+                        <input name="email" type="email" placeholder="Your E-mail Address..." required>
+
+                        <label>Contact Number:</label>
+                        <input name="contact" placeholder="Your Contact Number..." required>
+
+                        <label>Message:</label>
+                        <textarea name="message" placeholder="Your Message..." required></textarea>
+
+                        <label id="antispam">What is 7 x 2 + 2? (Anti-spam):</label>
+                        <input id="antispambox" name="human" placeholder="11">
+
+                        <input id="submit" name="submit" type="submit" value="Submit">
+                  </form>
+            </div>
+
+
+
+            <!-- Footer -->
+            <footer>
+                  <p> &copy; 2024 Mr. Jacobs | All rights reserved </p>
+            </footer>
+      </div>
+
+
+      <!-- SPALSH SCREEN JAVA SCRIPT -->
+      <script src="./sscreen.js"></script>
+
+
+
+      <!-- Burger Menu -->
+      <script>
+            function showSidebar() {
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'none'
+            }
+      </script>
+
+
+      <!-- Scroll to top -->
+      <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                  scrollFunction()
+            };
+
+            function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                  } else {
+                        mybutton.style.display = "none";
+                  }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+            }
+      </script>
+
+
+
+
+</body>
+
+</html>

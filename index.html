@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="theme-color" content="#ee2d26">
+
+      <meta name="description" content="Johan Jacobs, Award Winning Graphic Designer designing from Bloemfontein, South Africa.
+      ">
+
+      <meta name="keywords"
+            content="graphic designer, designer, freelance, graphic, freelance graphic designer, Bloemfontein, grafies, grafiese ontwerper, design, agency, studio, logo design, graphic designer Bloemfontein, freelance designer Bloemfontein, grafies, grafiese ontwerper Bloemfontein, bloemfontein, South Africa, Suid Afrika">
+
+      <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+      <link rel="manifest" href="./img/site.webmanifest">
+
+      <link rel="stylesheet" href="styles.css">
+
+
+      <title>Johan Jacobs | Graphic Designer</title>
+
+</head>
+
+<body>
+
+      <!-- LOADER SCREEN -->
+      <div class="splash">
+            <img src="./img/logo-icon-C.png" alt="" class="fadeIn">
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+      <!-- HEADER & NAVBAR -->
+      <header class="header">
+
+            <nav>
+                  <ul class="sidebar">
+                        <li onclick="hideSidebar()"><a href="#"><svg xmlns=" http://www.w3.org/2000/svg" height="26"
+                                          viewBox="0 -960 960 960" width="26" fill="#f3f3f3">
+                                          <path
+                                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                    </svg>
+                              </a></li>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+
+                  <ul>
+                        <li class="hideOnMobile"><a href="./index.html" class="active">Home</a></li>
+                        <li class="hideOnMobile"><a href="./portfolio.html">Portfolio</a></li>
+                        <li class="hideOnMobile"><a href="./about.html">About</a></li>
+                        <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+                        <li onclick="showSidebar()" class="hide"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                          height="26" viewBox="0 -960 960 960" width="26" fill="#f3f3f3">
+                                          <path
+                                                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                    </svg></a></li>
+                  </ul>
+            </nav>
+
+            <a href="https://www.mrjacobs.co.za" class="logo"><img src="./img/logo-icon-A.png"
+                        alt="Johan Jacobs - Graphic Designer"></a>
+
+      </header>
+
+
+      <!-- Body Wrapper -->
+      <div class="body-wrapper" oncontextmenu="return false">
+
+            <!-- Intro Header Info -->
+            <div class="intro-header">
+                  <h2>Graphic design products and services that increase your productivity and profitability</h2>
+            </div>
+
+            <!-- Intro Subheader info -->
+            <div class="intro-subheader">
+                  <p>I am a South-African based freelance graphic designer specialising in designing for both white
+                        paper formats and digital media for corporate-, small- or start-up business.
+                  </p>
+            </div>
+
+
+            <div class="recent">
+                  <h1>Recent Projects</h1>
+            </div>
+
+            <!-- Recent work showcase -->
+            <div class="recent-work">
+
+                  <div class="container">
+                        <img src="./project/CHANGINGSPACES-01.jpg" alt="" class="image">
+                        <a href="./project/project-4.html">
+                              <div class="overlay">
+                                    <div class="text">Changing Space - Capability Statement<br>View Project</div>
+                              </div>
+                        </a>
+                  </div>
+
+                  <div class="container">
+                        <img src="./project/jj-1.jpg" alt="" class="image">
+                        <a href="./project/project-3.html">
+                              <div class="overlay">
+                                    <div class="text">Mr Jacobs - Personel CI<br>View Project</div>
+                              </div>
+                        </a>
+                  </div>
+
+                  <div class="container">
+                        <img src="./project/Elsabey-1.jpg" alt="" class="image">
+                        <a href="./project/project-2.html">
+                              <div class="overlay">
+                                    <div class="text">Elsabey - Handmade Boutique<br>View Project</div>
+                              </div>
+                        </a>
+                  </div>
+
+                  <div class="container">
+                        <img src="./project/blitz-1.png" alt="" class="image">
+                        <a href="./project/project-1.html">
+                              <div class="overlay">
+                                    <div class="text">Blitz | Digital Media<br>View Project</div>
+                              </div>
+                        </a>
+                  </div>
+
+            </div>
+
+
+            <!-- Footer -->
+            <footer>
+                  <p> &copy; 2024 Mr. Jacobs | All rights reserved </p>
+            </footer>
+
+      </div>
+
+      <!-- SPALSH SCREEN JAVA SCRIPT -->
+      <script src="./sscreen.js"></script>
+
+
+
+      <!-- Burger Menu -->
+      <script>
+            function showSidebar() {
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'none'
+            }
+      </script>
+
+
+      <!-- Scroll to top -->
+      <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                  scrollFunction()
+            };
+
+            function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                  } else {
+                        mybutton.style.display = "none";
+                  }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+            }
+      </script>
+
+
+
+
+</body>
+
+</html>
